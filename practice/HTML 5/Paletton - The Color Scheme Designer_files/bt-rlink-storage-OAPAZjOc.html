@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://cdn.btmessage.com/assets/bt-rlink-storage-OAPAZjOc.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Storage</title>
+    <script>
+      window.addEventListener("message", function (event) {
+        try {
+          const expectedOrigin =
+            document.referrer != ""
+              ? new URL(document.referrer).origin
+              : window.location.ancestorOrigins[0];
+
+          const { trustedRLEvent, action, storageType, key, value } =
+            event.data;
+
+          if (event.origin === expectedOrigin && trustedRLEvent) {
+            const storage =
+              storageType === "local" ? localStorage : sessionStorage;
+            switch (action) {
+              case "set-data":
+                storage.setItem(key, value);
+                return event.source.postMessage(
+                  { status: "success", source: "bt-rlink-storage" },
+                  event.origin,
+                );
+              case "get-data":
+                return event.source.postMessage(
+                  {
+                    status: "success",
+                    source: "bt-rlink-storage",
+                    value: storage.getItem(key),
+                  },
+                  event.origin,
+                );
+              case "remove-data":
+                storage.removeItem(key);
+                return event.source.postMessage(
+                  { status: "success", source: "bt-rlink-storage" },
+                  event.origin,
+                );
+              default:
+                return event.source.postMessage(
+                  { status: "error", source: "bt-rlink-storage" },
+                  event.origin,
+                );
+            }
+          }
+        } catch (e) {
+          console.log({ e });
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+
+</body></html>
