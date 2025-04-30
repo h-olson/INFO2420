@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Extreme Honeymoons - Home</title>
+<link rel="stylesheet" href="mystyles.css">
+<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="logoRollover()">
+    <!--I need the logo, banner and the Navigation bar. Dont forget the id=logo-->
+    <header>
+        <img src="Images/ExtremeHoneymoonsLogoCopy.jpg" alt="Logo" id="logo">
+        <img src="Images/ExtremeHoneymoonBannerCopy.gif" alt="Banner">
+
+        <!--Need to place the navigations links- make sure that it is inside of the header-->
+        <nav>
+            
+                <a href="home.html">Home</a>
+                <a href="AboutUs.html">About Us</a>
+                <a href="Tributes.html">Tributes</a>
+                <a href="Survey.html">Survey</a>
+                <a href="Favorites.html">Favorites</a>
+            
+        </nav>
+    </header>
+
+    <!--This should contain all of the main content from the ExtremeHoneymoons.html-->
+    <section>
+        <article>
+            <h1>Welcome to Extreme Honeymoons</h1>
+            <p>
+                Welcome to Extreme Honeymoons! 
+                If you are just getting hitched, we can help make your honeymoon outrageous.
+                Take a look at our Excursions and take the opportunity to complete our survey.
+            </p>
+
+            <h2>Our Featured Adventures</h2>
+
+            <!-- Large Image -->
+
+            <div id="image">
+                <img id="largeImage" src="Images/Fullsize/hunt1.jpg" alt="Hunting Adventure 1" width="100%" style="max-height: 400px; object-fit: contain;">
+            </div>
+
+            <!-- Small Swap Images -->
+
+            <div id="thumbs">
+                <img src="Images/Thumbnails/ScubaSmall.jpg" alt="Mountains 1" 
+                    onmouseover="document.getElementById('largeImage').src='Images/Fullsize/hunt1.jpg'; 
+                                document.getElementById('largeImage').alt='Mountains 1';">
+                                
+                <img src="Images/Thumbnails/SkiCouple3Sm.jpg" alt="Hiking Couple 2" 
+                    onmouseover="document.getElementById('largeImage').src='Images/Fullsize/Owner1Sm.jpg'; 
+                                document.getElementById('largeImage').alt='Hiking Couple 2';">
+                                
+                <img src="Images/Thumbnails/BikeCouple1Sm.jpg" alt="Sailing 3" 
+                    onmouseover="document.getElementById('largeImage').src='Images/Fullsize/SailingSmall.jpg'; 
+                                document.getElementById('largeImage').alt='Sailing 3';">
+                                
+                <img src="Images/Thumbnails/CoupleHikingSm.jpg" alt="Hunting Adventure 4" 
+                    onmouseover="document.getElementById('largeImage').src='Images/Fullsize/hunt4.jpg'; 
+                                document.getElementById('largeImage').alt='Hunting Adventure 4';">
+            </div>
+
+            <!-- Print Button Rollover -->
+            <div class="print-button">
+                <a href="#" onmouseover="document.getElementById('printButton').src='Images/Printbutton2copy.gif';" 
+                onmouseout="document.getElementById('printButton').src='Images/Printbuttoncopy.gif';">
+                <img id="printButton" src="Images/Printbuttoncopy.gif" alt="Print Page Button" width="200" height="50">
+                </a>
+            </div>
+
+            <h2>Mini Tribute</h2>
+            <p><img src="Images/Fullsize/Owner1sm.Jpg" alt= "Founder">
+            Our founder's love story started on the edge of a cliff <a href= "extremehoneymoons_tributes.html">more >></a></p>
+
+        </article>
+    </section>
+
+    <!--need to put my UVU email and make sure to put a disclaimer that this site is for educational purposes-->
+    <footer>
+        <p><a href="mailto:10768846@uvu.edu">Webmaster Email</a></p>
+        <p>This web site has been created soley for eductional purposes.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Extreme Honeymoons-Graphics</title>
+
+<script type="text/javascript">
+function preloadImages() {
+    var img1 = new Image();
+    img1.src = "../Images/Printbuttoncopy.gif";
+    var img2 = new Image();
+    img2.src = "../Images/Printbutton2copy.gif";
+    var img3 = new Image();
+    img3.src = "../Images/ExtremeHoneymoonsLogoCopy2.jpg";
+}
+</script>
+
+<style type="text/css">
+
+
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: rgb(241, 241, 222);
+    }
+
+    header img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        main img {
+            max-width: 400px;
+            width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+    .print-button {
+        margin-top: 30px;
+    }
+
+    .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-size: 16px;
+        color: white;
+        background-color: #175a26;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .button-link:hover {
+        background-color: #218838;
+    }
+    img {
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #thumbs, #image {
+    width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+    background: #C98E14;
+    padding: 5px;
+    }
+    #thumbs {
+    margin-top: 10px;
+    }
+    #thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+    }
+    #image {
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    }
+    .instructions {
+    font-style: italic;
+    }
+</style>
+</head>
+
+<body onload="preloadImages()">
+    
+
+ <header>
+
+<!-- Extreme Honeymoons banner -->
+<img src="../Images/ExtremeHoneymoonBannerCopy.gif" alt="Extreme Honeymoons Banner">
+</header>
+
+<!-- Extreme Honeymoons Logo -->
+<main>
+    <a href="#" onmouseover="document.getElementById('logo').src='../Images/ExtremeHoneymoonsLogoCopy2.jpg';" 
+       onmouseout="document.getElementById('logo').src='../Images/ExtremeHoneymoonsLogoCopy.jpg';">
+       <img id="logo" src="../Images/ExtremeHoneymoonsLogoCopy.jpg" alt="Extreme Honeymoons Logo" width="400">
+    </a>
+    </main>
+
+<br><br>
+
+<!-- Large Image -->
+
+<div id="image">
+    <img id="largeImage" src="../Images/Fullsize/hunt1.jpg" alt="Hunting Adventure 1" width="100%" style="max-height: 400px; object-fit: contain;">
+</div>
+
+<!-- Small Swap Images -->
+
+<div id="thumbs">
+    <img src="../Images/Thumbnails/ScubaSmall.jpg" alt="Mountains 1" 
+         onmouseover="document.getElementById('largeImage').src='../Images/Fullsize/hunt1.jpg'; 
+                      document.getElementById('largeImage').alt='Mountains 1';">
+                      
+    <img src="../Images/Thumbnails/SkiCouple3Sm.jpg" alt="Hiking Couple 2" 
+         onmouseover="document.getElementById('largeImage').src='../Images/Fullsize/Owner1Sm.jpg'; 
+                      document.getElementById('largeImage').alt='Hiking Couple 2';">
+                      
+    <img src="../Images/Thumbnails/BikeCouple1Sm.jpg" alt="Sailing 3" 
+         onmouseover="document.getElementById('largeImage').src='../Images/Fullsize/SailingSmall.jpg'; 
+                      document.getElementById('largeImage').alt='Sailing 3';">
+                      
+    <img src="../Images/Thumbnails/CoupleHikingSm.jpg" alt="Hunting Adventure 4" 
+         onmouseover="document.getElementById('largeImage').src='../Images/Fullsize/hunt4.jpg'; 
+                      document.getElementById('largeImage').alt='Hunting Adventure 4';">
+</div>
+
+<!-- Print Button Rollover -->
+<div class="print-button">
+    <a href="#" onmouseover="document.getElementById('printButton').src='../Images/Printbutton2copy.gif';" 
+       onmouseout="document.getElementById('printButton').src='../Images/Printbuttoncopy.gif';">
+       <img id="printButton" src="../Images/Printbuttoncopy.gif" alt="Print Page Button" width="200" height="50">
+    </a>
+</div>
+
+<!-- Back to Home Button -->
+
+<a href="../index.html" class="button-link">
+    Back to Home
+</a>
+
+
+
+</body>
+</html>
