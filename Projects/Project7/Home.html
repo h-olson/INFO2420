@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home - Native Cooking</title>
+
+	<link rel="stylesheet" href="MyStyles.css" type="text/css">	
+	
+	<script type="text/jscript" src="myScripts.js"></script>
+	
+	
+</head>
+
+<body  onload="preloadImages()">
+	<header>
+		
+		<a href="index.htm"
+			onmouseover="document.getElementById('logo').src='Images/logo1.png';"
+			onmouseout="document.getElementById('logo').src='Images/logo2.png';">
+
+		<img src="Images/logo1.png" alt="Logo" id="logo" width="133" height="126" class="logoleft">
+		</a>
+		
+		<img src="Images/banner2.jpg" alt="cooking banner" width="600" height="175" class="bannerimg">
+	</header>
+	
+	<section>
+	
+		<nav>
+			
+			<a href="Home.html">Home Page</a><br>
+			<a href="AboutUs.html">About Us&nbsp; &nbsp; &nbsp;</a><br>
+			<a href="tributes.html">Tributes &nbsp; &nbsp; &nbsp;</a><br>
+			<a href="favorites.html">Favorites&nbsp; &nbsp; &nbsp;</a><br>
+			<a href="survey.html">Survey Page</a>
+		
+		</nav>
+		
+		
+		<article>
+			<h1>Welcome to Native Cooking of Utah!</h1>
+			<p class= "welcome">
+			If you love to cook like we do, you should enjoy looking around this site.  
+			   Take a look at our Recipes and take the opportunity to complete our survey.</p>
+			
+		<div id="thumbs">
+			<img src="Images/Thumbnails/CakeSmadjusted.jpg" alt="Jello Cake" onmouseover="swapImage(0);" />
+			<img src="Images/Thumbnails/DutchOven.jpg" alt="Dutch Oven Cooking" onmouseover="swapImage(1);" />
+			<img src="Images/Thumbnails/ForkSalad.jpg" alt="Raspberry Cake" onmouseover="swapImage(2);" />
+			<img src="Images/Thumbnails/RasberryIceCream.jpg" alt="Raspberry Ice Cream" onmouseover="swapImage(3);" />
+
+		</div>
+
+		<div id="image">
+			<img id="theImage" src="Images/Fullsize/JelloCakeSm.jpg" alt="Jello Cake" />
+			<h3 id="bottomText">Jello Cake</h3>
+		</div>
+			
+			
+		<h2 id="press">Press Releases</h2>
+			
+		<h3>Good Eating, October 2011:</h3>
+			<p class="tribute">
+				"Master Chef Pierre DeBois captures the Native Cooking of Utah in his online web site: Native Cooking of Utah. Browsing his web site is like having a family reunion 
+				where everyone... <a href="tributes.html">more...</a>
+			</p>
+
+		
+		</article>
+	
+	</section>
+	
+	<footer>
+		<p>Contact Us By Email: <a href="mail to:10768846@uvu.edu">Holly Olson</a></p>
+		<p>This website has been created solely for educational purposes.</p>
+	
+	</footer>
+	
+</body>
+</html>
