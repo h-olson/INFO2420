@@ -31,12 +31,12 @@ nav{
 
 article{
 	float: left;
-	width: 650px;
+	width: 620px;
 	text-align: center;
 }
 
 article p {
-    max-width: 650px;
+    max-width: 560px;
     margin: 0 auto 20px auto;
     text-align: left;
     line-height: 1.5;
@@ -153,9 +153,29 @@ p{
     margin: 0 auto;
     max-width: 100%;
     border: 4px solid #21576C;
-.clear {
+}
+	
+.img-left{
+    float: left;
+    display: inline ;
+    width: 180px;
+    height: auto;
+    margin: 0 20px 15px 0;
+}
+
+.img-right{
+    float: right;
+    display: inline;
+    width: 180px;
+    height: auto;
+    margin: 0 0 15px 20px;
+}
+
+.clear{
     clear: both;
 }
+
+
 
 
 

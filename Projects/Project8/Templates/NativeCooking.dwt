@@ -36,7 +36,7 @@
 			<a href="../Links.html">Favorites</a><br>
 			<a href="../Survey.html">Survey Page</a>
 			<a href="#" class="printlink" onclick="window.print(); return false;">
-				<img src="../Images/printgreen.png"
+				<img src="../Images/print2updated.jpg"
 				alt="Print Page"
 				onmouseover="this.src='../Images/print2updated.jpg';"
 				onmouseout="this.src='../Images/print1newest.jpg';">
