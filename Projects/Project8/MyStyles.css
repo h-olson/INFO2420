@@ -129,5 +129,33 @@ p{
     line-height:1.5;
 }
 
+.splash{
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.splash h1{
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.splash p{
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.splash img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 4px solid #21576C;
+.clear {
+    clear: both;
+}
+
 
 
