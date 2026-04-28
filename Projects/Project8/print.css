@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    background:#ffffff;
+    color:#000000;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+header, section, footer{
+    width:100%;
+    margin:0;
+}
+
+nav{
+    display:none;
+}
+
+article{
+    width:95%;
+    float:none;
+    margin:auto;
+}
+
+footer{
+    display:none;
+}
+
+img{
+    max-width:100%;
+}
+
+a{
+    color:#000000;
+    text-decoration:none;
+}

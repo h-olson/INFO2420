@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: #21576C;
+	font-family:Arial, Helvetica, san-serif;
+	font-size: medium;
+	color: #21576C;}
+
+header{
+	width: 900px;
+	height: 200px;
+	background-color: #8EA52E;
+	text-align: center;
+	padding-top: 10px;
+	margin: auto;}
+
+section{
+	width: 900px;
+	background-image: url('Images/colspan2.jpg'); 
+	background-repeat: repeat-y;
+	overflow: hidden;
+	margin: auto;
+		
+}
+
+nav{
+	float:left;
+	width:250px;
+}
+
+article{
+	float: left;
+	width: 650px;
+	text-align: center;
+}
+
+article p {
+    max-width: 650px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+    line-height: 1.5;
+}
+
+footer{
+	text-align: center;
+	width: 900px;
+	height: 90px;
+	background-color: #8EA52E;
+	margin: auto;
+}
+
+.logoleft{
+	float: left;
+	padding-top: 0px;
+	padding-left: 15px;
+}
+
+.bannerimg{
+	border: 5px solid #6B2E2E;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+nav a{
+	display:block;
+	width:180px;
+	padding:12px;
+	margin:18px auto;
+	text-align:center;
+
+	font-size:26px;
+	font-family: Georgia, serif;
+	font-weight:bold;
+
+	color:#F4E6D7;
+	text-decoration:none;
+
+	background-color:#21576C;
+	border:1px solid #AFC7CE;
+	border-radius:4px;
+}
+
+nav a.printlink {
+    background: none;
+    border: none;
+    padding: 8px;
+    text-align: center;
+}
+
+nav a.printlink:hover {
+    background: none;
+    border: none;
+}
+
+nav a.printlink img {
+    display: block;
+    margin: 0 auto;
+	position:relative;
+	right: 10px;
+}
+
+nav a:hover{
+	background-color:#163D4B;
+	color:#FFFFFF;
+	border:1px solid #F4E6D7;
+}
+
+h1{
+	color:#000000;
+	text-align: center;
+	font-size: xx-Large;
+}
+
+.welcome{
+    max-width:520px;
+    margin:0 auto 25px auto;
+    text-align:center;
+    line-height:1.5;
+}
+
+p{
+	color: #2F3181
+}
+
+.tribute{
+    max-width:520px;
+    margin:0 auto 20px auto;
+    text-align:center;
+    line-height:1.5;
+}
+
+
+
